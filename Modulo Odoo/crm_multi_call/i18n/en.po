@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: crm_multi_call\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Multi Call"
+msgstr "Multi Call"
+
+msgid "Start Multi Call"
+msgstr "Start Multi Call"
+
+msgid "Pending"
+msgstr "Pending"
+
+msgid "In Progress"
+msgstr "In Progress"
+
+msgid "Answered"
+msgstr "Answered"
+
+msgid "Failed"
+msgstr "Failed"
+
+msgid "Done"
+msgstr "Done"
+
+msgid "Phone Numbers"
+msgstr "Phone Numbers"
+
+msgid "Answered Number"
+msgstr "Answered Number"
+
+msgid "Note"
+msgstr "Note" 

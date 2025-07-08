@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_crm_lead_form_inherit_multi_call" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.multi.call</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <header position="inside">
+                <button name="action_create_multi_call" type="object" string="Multi Call" class="btn-secondary"/>
+            </header>
+        </field>
+    </record>
+</odoo> 

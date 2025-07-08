@@ -1,0 +1,44 @@
+<odoo>
+    <record id="view_crm_multi_call_form" model="ir.ui.view">
+        <field name="name">crm.multi.call.form</field>
+        <field name="model">crm.multi.call</field>
+        <field name="arch" type="xml">
+            <form string="CRM Multi Call">
+                <sheet>
+                    <group>
+                        <field name="lead_id"/>
+                        <field name="partner_id"/>
+                        <field name="phone_numbers"/>
+                        <field name="status"/>
+                        <field name="result_number"/>
+                        <field name="note"/>
+                    </group>
+                    <footer>
+                        <button name="action_start_multi_call" type="object" string="Start Multi Call" class="btn-primary" attrs="{'invisible': [('status','!=','pending')]}"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_crm_multi_call_tree" model="ir.ui.view">
+        <field name="name">crm.multi.call.tree</field>
+        <field name="model">crm.multi.call</field>
+        <field name="arch" type="xml">
+            <tree string="CRM Multi Call">
+                <field name="lead_id"/>
+                <field name="partner_id"/>
+                <field name="phone_numbers"/>
+                <field name="status"/>
+                <field name="result_number"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_crm_multi_call" model="ir.actions.act_window">
+        <field name="name">CRM Multi Calls</field>
+        <field name="res_model">crm.multi.call</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_crm_multi_call_root" name="CRM Multi Call" parent="crm.crm_menu_root" action="action_crm_multi_call"/>
+</odoo> 

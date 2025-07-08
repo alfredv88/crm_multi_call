@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_multi_call,access.crm.multi.call,model_crm_multi_call,,1,1,1,1 
